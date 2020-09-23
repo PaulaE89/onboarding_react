@@ -1,10 +1,13 @@
-.App {
-  text-align: center;
+*{
+
+  background: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome-title{
+
+  color:white;
+  font-size: 45px;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {

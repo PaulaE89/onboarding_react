@@ -1,13 +1,39 @@
 *{
 
-  background: black;
+  background: white;
+}
+
+.content{
+
+  display: flex;
+  justify-content: center;
+  margin-top:7%;
+ 
 }
 
 .welcome-title{
 
   color:white;
   font-size: 45px;
-  
+
+}
+
+.image-welcome{
+  display: flex;
+  margin: auto;
+
+  width: 70%;
+}
+.form_user{
+
+display: flex;
+align-items: center;
+
+}
+
+.enter_user{
+
+  background: green;
 }
 
 @media (prefers-reduced-motion: no-preference) {

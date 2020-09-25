@@ -2,12 +2,26 @@ import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import welcomeImage from './assets/welcome.png';
 import './App.css';
-import InputUser from './components/InputUser'
+import InputUser from './components/inputUser/InputUser'
+import LetsImagine from './components/letsImagine/LetsImagine'
 
-class App extends Component {
+export class App extends Component {
+
+  constructor(props){
+
+    super(props)
+    this.state={
+        name: ''
+    }
+
+}
 
 
-  userName=(name)=>{console.log(name)};
+
+  userName=(name)=>{console.log('aqui '+ name);
+
+  this.setState({name})
+};
 
 
 
@@ -27,6 +41,8 @@ class App extends Component {
           <img src={welcomeImage} alt="welcome" className="image-welcome" />
           
         <InputUser userName={this.userName}/>
+
+        <LetsImagine name={this.state.name}/>
          
         </div>
 

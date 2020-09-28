@@ -8,17 +8,13 @@ export default class InputUser extends Component {
         this.state = {
             name: ''
         }
-
     }
-
     saveName = (e) => this.setState({ name: e.target.value })
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.userName(this.state.name);
         this.setState({ name: '' })
-
     }
-
     render() {
         return (
             <form className="form_user" onSubmit={this.handleSubmit} >

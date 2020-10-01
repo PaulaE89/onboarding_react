@@ -16,7 +16,6 @@ export class Welcome extends Component {
     }
 
     userName = (name) => {
-        console.log('aqui ' + name);
         this.setState({ name })
     };
     render() {

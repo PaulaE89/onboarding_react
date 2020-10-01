@@ -41,10 +41,12 @@
     font-size: 22px;
     width: 35%;
     border: none;
+    border-radius: 10px;
   }
   
   input.input_user::placeholder {
     color: #c7c7c7;
+    text-align: center;
   }
   
   input.enter_user {

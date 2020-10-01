@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './CareerPath.css';
 import careerpathCharacter from '../../assets/careerpath-character.png';
 
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 import Collapsible from 'react-collapsible';
 
 
@@ -23,7 +25,7 @@ const CareerPath = () => {
             <div className="careersCollapsible">
 
 
-                <Collapsible trigger="INITIAL AND MID LEVEL">
+                <Collapsible trigger="INITIAL AND MID LEVEL" className="initial">
 
                     <ul>
                         <li>Junior</li>
@@ -35,7 +37,7 @@ const CareerPath = () => {
 
 
 
-                <Collapsible trigger="SENIOR">
+                <Collapsible trigger="SENIOR" className="senior">
 
                     <ul>
                         <li>Senior</li>
@@ -47,7 +49,7 @@ const CareerPath = () => {
 
 
 
-                <Collapsible trigger="EXPERT & MGN">
+                <Collapsible trigger="EXPERT & MGN" className="expert">
 
 
                     <ul>
@@ -61,7 +63,7 @@ const CareerPath = () => {
 
                 </Collapsible>
 
-                <Collapsible trigger="Senior MGMT">
+                <Collapsible trigger="Senior MGMT" className="seniormgmt">
                     <ul>
                         <li>Studio Partner</li>
                         <li>CTO</li>
@@ -77,6 +79,11 @@ const CareerPath = () => {
 
 
             </div>
+
+
+            <Link to={{ pathname: '/letsImagine' }} className="button_previous enter_user" >Previous</Link>
+
+              
 
 
 

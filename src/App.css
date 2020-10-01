@@ -1,5 +1,19 @@
 
+.button_next{
+  float: right;
+  margin-right: 100px;
 
+
+ 
+}
+
+.button_previous{
+
+  float: left;
+  margin-left: 100px;
+
+
+}
 
 
 /* .enter_user{

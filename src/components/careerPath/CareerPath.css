@@ -1,5 +1,78 @@
-.containerCollapsible{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
 
 
-    background: black;
+.containerCollapsible {
+   width: 100%;
+   padding: 8% 8% 8% 4%;
+   display: flex;
+   align-items: center;
+
+}
+
+.imageCollapsible, .careersCollapsible {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   
+}
+
+.imageCollapsible img {
+   width:80%;
+}
+
+.careersCollapsible {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.Collapsible {
+   color: gray;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: 200;
+   width: 70%;
+   background-color: #f2f2f2;
+   margin: 1px auto;
+   border-radius: 7px;
+   padding: 1%;
+
+}
+
+span.Collapsible__trigger.is-open {
+   color: white;
+}
+
+.Collapsible.initial {
+   background-color: #09A387;
+}
+
+.Collapsible.senior {
+  background-color:#6C93E1;
+}
+
+.Collapsible.expert {
+   background-color: #941342;
+}
+
+.Collapsible.seniormgmt {
+   background-color: #ED873B;
+}
+
+.Collapsible__contentOuter {
+   background-color: #eaeaea;
+   border-radius: 10px;
+   margin-top: 2%;
+}
+
+ul {
+   margin-top: 4%;
+
+}
+
+ul li {
+   text-align: left;
+   color: gray;
+   font-family: 'Roboto Condensed', sans-serif;
+
+   font-weight: 200;
 }

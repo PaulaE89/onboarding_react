@@ -1,10 +1,21 @@
 import React, { useState } from 'react'
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './ButtonNext.css'
 
-const ButtonNext = () => {
+const ButtonNext = (getUrl) => {
+
+    const [link,valueLink]=useState('');
+
+        console.log("herer", getUrl)
+    
+//    const   getLink = (name) => {
+//         this.setState({ name })
+//     };
     return (
         <>
-            <button value="next" className="buttonNext"></button>
+             {/* <Link value="Previous" className="buttonNext">Previous</Link> */}
+            <Link to={getUrl} value="Next" className="buttonNext">Next</Link >
         </>
     )
 }

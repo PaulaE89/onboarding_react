@@ -15,10 +15,11 @@ export class App extends Component {
           <Switch>
             <Route exact path='/' component={Welcome} />
             <Route path='/letsImagine' component={LetsImagine} />
+            <Route path='/careerPath' component={CareerPath}/>
           </Switch>
         </Router>
-        
-    <CareerPath></CareerPath>
+   
+  
       </div>
       
     );

@@ -8,3 +8,12 @@
     border: none;
   }
   
+
+  a:hover {
+    color: white;
+    text-decoration: none;
+ }
+ 
+ a.enter_user:hover {
+    background-color: #119c38;
+ }

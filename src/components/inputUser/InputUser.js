@@ -9,7 +9,7 @@ export default class InputUser extends Component {
             name: ''
         }
     }
-    saveName = (e) => this.setState({ name: e.target.value })
+    saveName = (e) => this.setState({ name : e.target.value })
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.userName(this.state.name);
@@ -20,7 +20,7 @@ export default class InputUser extends Component {
             <form className="form_user" onSubmit={this.handleSubmit} >
                 <input type="text" name="name" placeholder="your name" className="input_user" onChange={this.saveName} value={this.state.name} />
                 {/* <input type="submit" value="Save" className="enter_user" /> */}
-                <Link to={{ pathname: '/letsImagine', name: this.state.name }} className="enter_user" >Save</Link>
+                <Link to={{ pathname: '/letsImagine', name: this.state.name.charAt(0).toUpperCase() + this.state.name.slice(1) }} className="enter_user">Save</Link>
             </form>
         )
     }

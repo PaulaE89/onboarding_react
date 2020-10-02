@@ -6,9 +6,20 @@
    padding: 8% 8% 8% 4%;
    display: flex;
    align-items: center;
+   background: black;
+  
+   height: 100vh;
 
 }
 
+
+.titleCareerPath{
+
+    color:white;
+    font-size: 60px;
+    font-family: 'Roboto Condensed', sans-serif;
+  margin-top: -100px;
+}
 .imageCollapsible, .careersCollapsible {
    width: 50%;
    display: flex;
@@ -26,17 +37,23 @@
    text-align: center;
 }
 
-.Collapsible {
-   color: gray;
-   font-family: 'Roboto Condensed', sans-serif;
-   font-weight: 200;
+
+
+  .Collapsible{
+ 
+
+   color: #f2f2f2;
+   font-family: 'Roboto condensed', sans-serif;
+   font-weight: 300;
    width: 70%;
-   background-color: #f2f2f2;
+   background-color:  #828282;
    margin: 1px auto;
    border-radius: 7px;
-   padding: 1%;
+   padding: 3%;
+   font-size: 20px;
+}  
 
-}
+
 
 span.Collapsible__trigger.is-open {
    color: white;
@@ -76,3 +93,21 @@ ul li {
 
    font-weight: 200;
 }
+
+
+
+  span.Collapsible__trigger.is-open {
+    color: black;
+}
+
+
+ 
+.expertlist {
+   display: flex;
+}
+
+ul.exp {
+   width: 50%;
+}
+  
+

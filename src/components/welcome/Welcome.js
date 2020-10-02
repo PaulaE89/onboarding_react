@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import welcomeImage from '../../assets/welcome.png';
 import './welcome.css';
 import InputUser from '../inputUser/InputUser'
-import LetsImagine from '../letsImagine/LetsImagine';
-import ButtonNext from '../buttonNext/ButtonNext';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export class Welcome extends Component {
     constructor(props) {

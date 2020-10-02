@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.buttons{
+
+  display: flex;
+    justify-content: space-between;
+    margin: 0 5% 5%;
+
+
+}
+
+.button_previous {
+  font-size: 'Roboto condensed' sans serif;
+  background-color: #d8a91c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+
+.button_next{
+  font-size: 'Roboto condensed' sans serif;
+  background-color: #d8a91c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import cope_image from '../../assets/cope_image.png';
 import ui_studio from '../../assets/ui_studio.png';
+import account from '../../assets/account.png'
+import './triForce.css';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -10,29 +12,27 @@ const triForce = (userName) => {
     console.log(userName);
 
     return (
-        <div>
+        <div className="triforcePage">
 
-            <h2>The triforce</h2>
+            <h1>The triforce</h1>
             <h3>{userName.location.userName}, you are here</h3>
 
             <div>
 
-                <Tabs>
+                <Tabs className="tabsModule">
                     <TabList>
-                        <Tab>Expertise</Tab>
-                        <Tab>Site</Tab>
-                        <Tab>Bussiness</Tab>
+                        <Tab className="exp">Expertise</Tab>
+                        <Tab className="site">Site</Tab>
+                        <Tab className="buss">Bussiness</Tab>
                     </TabList>
-                    <TabPanel>
-                        <h2>Expertise</h2>
+                    <TabPanel className="tabContent">
                         <img src={ui_studio} alt="ui_studio" />
                     </TabPanel>
-                    <TabPanel>
-                        <h2>Site</h2>
+                    <TabPanel className="tabContent">
                         <img src={cope_image} alt="cope_image" />
                     </TabPanel>
-                    <TabPanel>
-                        <h2>Bussiness</h2>
+                    <TabPanel className="tabContent">
+                    <img src={account} alt="account" />
                     </TabPanel>
                 </Tabs>
             </div>

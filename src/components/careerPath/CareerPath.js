@@ -10,7 +10,7 @@ const CareerPath = (nameUser) => {
     const userName = nameUser.location.nameUser;
 
     return (
-        <>
+        <div className="mainCollapsible">
 
             < div className="containerCollapsible">
                 <div>
@@ -50,7 +50,7 @@ const CareerPath = (nameUser) => {
                             </ul>
                         </div>
                     </Collapsible>
-                    <Collapsible trigger="Senior MGMT" className="seniormgmt">
+                    <Collapsible trigger="SENIOR MGMT" className="seniormgmt">
                         <ul>
                             <li>Studio Partner</li>
                             <li>CTO</li>
@@ -60,11 +60,11 @@ const CareerPath = (nameUser) => {
                 </div>
             </div>
 
-            <div className="buttons">
-                <Link to={{ pathname: '/letsImagine' }} className="button_previous" >Previous</Link>
-                <Link to={{ pathname: '/triForce', userName }} className="button_next" >Next</Link>
+            <div className="buttons buttons--careerpath">
+                <Link to={{ pathname: '/letsImagine' }} className="button_previous button_previous--careerpath" >Previous</Link>
+                <Link to={{ pathname: '/triForce', userName }} className="button_next button_next--careerpath" >Next</Link>
             </div>
-        </>
+        </div>
     )
 }
 

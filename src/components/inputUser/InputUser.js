@@ -15,12 +15,23 @@ export default class InputUser extends Component {
         this.props.userName(this.state.name);
         this.setState({ name: '' })
     }
+
+    // prueba=()=>{
+    //     if(this.state.name.length<1){
+
+    //         pointerEvents: 'none' 
+
+    //     }
+
+
+    
     render() {
         return (
             <form className="form_user" onSubmit={this.handleSubmit} >
                 <input type="text" name="name" placeholder="your name" className="input_user" onChange={this.saveName} value={this.state.name} />
-                {/* <input type="submit" value="Save" className="enter_user" /> */}
-                <Link to={{ pathname: '/letsImagine', name: this.state.name.charAt(0).toUpperCase() + this.state.name.slice(1) }} className="enter_user">Save</Link>
+                {/* <button type="submit" value="Save" className="enter_user" > save</button> */}
+                <Link to={{ pathname: '/letsImagine', name: this.state.name.charAt(0).toUpperCase() 
+                + this.state.name.slice(1) }} className="enter_user"  >Save</Link>
             </form>
         )
     }

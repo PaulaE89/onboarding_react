@@ -1,4 +1,83 @@
-p{
 
-    color: red;
-}
+li.exp:hover {
+    background-color:#45779a;
+ }
+ 
+ .triforcePage {
+    padding: 4%;
+    font-family: 'Roboto condensed' sans serif;
+ }
+ 
+ .triforcePage h1 {
+    color: #33353a;
+ }
+ 
+ .triforcePage  h3 {
+    text-align: center;
+    color: gray;
+ }
+ 
+ .tabsModule {
+    border: 1px solid #cacaca;
+    padding: 0;
+    border-radius: 20px;
+    width: 60%;
+    margin: 5% auto;
+    box-shadow: 0px 0px 12px 0px rgba(179,179,179,1);
+ }
+ 
+ ul.react-tabs__tab-list {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .tabsModule img {
+    margin: 3%;
+    min-height: 180px;
+    width: 180px;
+ }
+ 
+ div.tabContent {
+    justify-content: center;
+    display: flex;
+ }
+ 
+ ul.react-tabs__tab-list li {
+    padding: 2% 10%;
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+ }
+ 
+ li.exp {
+    border-top-left-radius: 20px;
+    background-color:#5C96BE;
+    color: white;
+ }
+ 
+ li.exp:hover {
+    background-color:#45779a;
+ }
+ 
+ li.site {
+    background-color:#13A89E;
+    color: white;
+ }
+ 
+ li.site:hover {
+    background-color:#138880;
+ }
+ 
+ li.buss {
+    border-top-right-radius: 20px;
+    background-color:#a084d2;
+    color: white;
+ }
+ 
+ li.buss:hover {
+    background-color:#7d66a7;
+ }

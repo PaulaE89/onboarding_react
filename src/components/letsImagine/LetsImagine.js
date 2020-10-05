@@ -21,9 +21,9 @@ export default class LetsImagine extends Component {
                 <p>First we need to create our <span>fictional character!</span></p>
 
                 <div className="buttons">
-                    <Link to={{ pathname: '/' }} className="button_previous" >Previous</Link>
+                    <Link to={{ pathname: '/' }} className="button_previous " >Previous</Link>
 
-                    <Link to={{ pathname: '/careerPath', nameUser }} className="button_next" >Next</Link>
+                    <Link to={{ pathname: '/careerPath', nameUser }} className="button_next " >Next</Link>
 
                 </div>
 

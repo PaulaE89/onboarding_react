@@ -9,7 +9,7 @@ export default class InputUser extends Component {
             name: ''
         }
     }
-    saveName = (e) => this.setState({ name : e.target.value })
+    saveName = (e) => this.setState({ name: e.target.value })
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.userName(this.state.name);

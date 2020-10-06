@@ -1,48 +1,48 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
 
 .mainCollapsible{
    background: black;
 }
 
-.containerCollapsible {
+.containerCollapsibleFci {
    width: 100%;
-   padding: 8% 8% 8% 4%;
+   padding: 3% 8% 8% 4%;
    display: flex;
    align-items: center;
    background: black;
    height: 100vh;
-
 }
 
-.titleCareerPath{
+.titleFCI{
     color:white;
-    font-size: 60px;
+    font-size: 45px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: -100px;
+    padding: 3%;
 }
 
-.imageCollapsible, .careersCollapsible {
+.imageDragonCollapsible, .fciCollapsible {
    width: 50%;
    display: flex;
    justify-content: center;
 }
 
-.imageCollapsible img {
-   width:80%;
+.imageDragonCollapsible img {
+   width:100%;
 }
 
-.careersCollapsible {
+.fciCollapsible {
    display: flex;
    flex-direction: column;
    text-align: center;
 }
-  
-.careersCollapsible .Collapsible{
+
+.fciCollapsible .Collapsible{
    color: #f2f2f2;
    font-family: 'Roboto condensed', sans-serif;
    font-weight: 300;
    width: 70%;
-   background-color:  #828282;
+   background-color:  #8dc3bd;
    margin: 1px auto;
    border-radius: 7px;
    padding: 3%;
@@ -50,58 +50,61 @@
    cursor: pointer;
 }  
 
+
 span.Collapsible__trigger.is-open {
    color: white;
 }
 
-.Collapsible.initial {
-   background-color: #09A387;
+.Collapsible.excellenceAct {
+   background-color: #ed46a5;
 }
 
-.Collapsible.senior {
-  background-color:#6C93E1;
+.Collapsible.constInnov {
+  background-color:#A42AFB;
 }
 
-.Collapsible.expert {
-   background-color: #941342;
+.Collapsible.teamPlayer {
+   background-color:#0097A7;
 }
 
-.Collapsible.seniormgmt {
-   background-color: #ED873B;
+.fciCollapsible ul.excellence li span {
+   color: #ED46A5;
 }
 
-.Collapsible__contentOuter {
-   background-color: #eaeaea;
+.fciCollapsible ul.constantly li span {
+   color: #a42afb;
+}
+
+.fciCollapsible ul.team li span {
+   color: #0097a7;
+}
+
+.fciCollapsible .Collapsible__contentOuter {
+   background-color: white;
    border-radius: 10px;
    margin-top: 2%;
+   display: flex;
+   justify-content: center;
 }
 
-.careersCollapsible ul {
+.fciCollapsible ul {
    margin-top: 4%;
-
+   list-style: none;
+   padding: 0;
 }
 
-.careersCollapsible ul li {
+.fciCollapsible ul li {
    text-align: left;
-   color: gray;
+   color: black;
    font-family: 'Roboto Condensed', sans-serif;
-
    font-weight: 200;
 }
 
-.careersCollapsible span.Collapsible__trigger.is-open {
+span.Collapsible__trigger.is-open {
     color: black;
 }
 
 
-.careersCollapsible .expertlist {
-   display: flex;
-}
-
-.careersCollapsible ul.exp {
-   width: 50%;
-}
-  
 .buttons--careerpath{
    margin-top: -120px;
 }

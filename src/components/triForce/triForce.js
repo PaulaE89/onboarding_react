@@ -39,7 +39,7 @@ const triForce = (userName) => {
 
             <div className="buttons">
                     <Link to={{ pathname: '/careerPath' }} className="button_previous" >Previous</Link>
-                    <Link to={{ pathname: '/', userName }} className="button_next" >Next</Link>
+                    <Link to={{ pathname: '/fci' }} className="button_next" >Next</Link>
                 </div>
         </div>
     )

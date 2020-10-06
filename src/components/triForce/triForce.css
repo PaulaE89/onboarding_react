@@ -1,11 +1,10 @@
 
-li.exp:hover {
-    background-color:#45779a;
- }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
  
  .triforcePage {
     padding: 4%;
-    font-family: 'Roboto condensed' sans serif;
+    font-family: 'Roboto Condensed', sans-serif;
  }
  
  .triforcePage h1 {

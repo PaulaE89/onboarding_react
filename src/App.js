@@ -5,6 +5,7 @@ import LetsImagine from './components/letsImagine/LetsImagine';
 import Welcome from './components/welcome/Welcome';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import CareerPath from './components/careerPath/CareerPath';
+import triForce from './components/triForce/triForce'
 
 
 export class App extends Component {
@@ -16,6 +17,7 @@ export class App extends Component {
             <Route exact path='/' component={Welcome} />
             <Route path='/letsImagine' component={LetsImagine} />
             <Route path='/careerPath' component={CareerPath}/>
+            <Route path='/triForce' component={triForce}/>
           </Switch>
         </Router>
    

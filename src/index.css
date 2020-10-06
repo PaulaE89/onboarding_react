@@ -23,7 +23,7 @@ code {
 }
 
 .button_previous {
-  font-size: 'Roboto condensed' sans serif;
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: #d8a91c;
   color: white;
   padding: 10px 20px;
@@ -33,7 +33,7 @@ code {
 }
 
 .button_next{
-  font-size: 'Roboto condensed' sans serif;
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: #d8a91c;
   color: white;
   padding: 10px 20px;

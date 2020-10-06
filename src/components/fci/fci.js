@@ -6,49 +6,36 @@ import Collapsible from 'react-collapsible';
 
 const fci = () => {
 
-   
-   
-
     return (
         <div className="mainCollapsible">
-
-            < div className="containerCollapsible">
                 <div>
-                    <p className="titleCareerPath">Globant Values & FCI3 </p>
-
+                    <p className="titleFCI">Globant Values & FCI3 </p>
                 </div>
-                <div className="imageCollapsible">
+            < div className="containerCollapsibleFci">
+               
+                <div className="imageDragonCollapsible">
                     <img src={fciImage} alt="careerPathCharacter"></img>
                 </div>
-                <div className="careersCollapsible">
-                    <Collapsible trigger="Excellence in your work" className="initial" classname="prueba">
-                        <ul>
-                            <li>Focused</li>
-                            <li>Commited</li>
-                            
+                <div className="fciCollapsible">
+                    <Collapsible trigger="Excellence in your work & Act Ethically" className="excellenceAct">
+                        <ul className="excellence">
+                            <li><span>F</span>ocused</li>
+                            <li><span>C</span>ommited</li> 
+                            <li><span>I</span>ntegrity</li> 
                         </ul>
                     </Collapsible>
-                    <Collapsible trigger="Act Ethically" className="senior">
-                        <ul>
-                            <li>Integrity</li>
-                          
-                        </ul>
-                    </Collapsible>
-                    <Collapsible trigger="Constantly Innovate & Think Big" className="expert">
-                        <div className="expertlist">
-                            <ul className="exp">
-                                <li>Fast Learner</li>
-                                <li>Clear Thinker</li>
-                                <li>Innovate</li>
+                    <Collapsible trigger="Constantly Innovate & Think Big" className="constInnov">
+                            <ul className="constantly">
+                                <li><span>F</span>ast Learner</li>
+                                <li><span>C</span>lear Thinker</li>
+                                <li><span>I</span>nnovate</li>
                             </ul>
-                           
-                        </div>
                     </Collapsible>
-                    <Collapsible trigger="Team Player & Have Fun" className="seniormgmt">
-                        <ul>
-                            <li>Flexible </li>
-                            <li>Collaborative</li>
-                            <li>Inclusive</li>
+                    <Collapsible trigger="Team Player & Have Fun" className="teamPlayer">
+                        <ul className="team">
+                            <li><span>F</span>lexible </li>
+                            <li><span>C</span>ollaborative</li>
+                            <li><span>I</span>nclusive</li>
                         </ul>
                     </Collapsible>
                 </div>

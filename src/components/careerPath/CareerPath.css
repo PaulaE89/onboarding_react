@@ -2,33 +2,29 @@
 
 .mainCollapsible{
    background: black;
-
-
 }
+
 .containerCollapsible {
    width: 100%;
    padding: 8% 8% 8% 4%;
    display: flex;
    align-items: center;
    background: black;
-  
    height: 100vh;
 
 }
 
-
 .titleCareerPath{
-
     color:white;
     font-size: 60px;
     font-family: 'Roboto Condensed', sans-serif;
-  margin-top: -100px;
+    margin-top: -100px;
 }
+
 .imageCollapsible, .careersCollapsible {
    width: 50%;
    display: flex;
    justify-content: center;
-   
 }
 
 .imageCollapsible img {
@@ -40,12 +36,8 @@
    flex-direction: column;
    text-align: center;
 }
-
-
-
-  .Collapsible{
- 
-
+  
+.careersCollapsible .Collapsible{
    color: #f2f2f2;
    font-family: 'Roboto condensed', sans-serif;
    font-weight: 300;
@@ -57,8 +49,6 @@
    font-size: 20px;
    cursor: pointer;
 }  
-
-
 
 span.Collapsible__trigger.is-open {
    color: white;
@@ -86,12 +76,12 @@ span.Collapsible__trigger.is-open {
    margin-top: 2%;
 }
 
-ul {
+.careersCollapsible ul {
    margin-top: 4%;
 
 }
 
-ul li {
+.careersCollapsible ul li {
    text-align: left;
    color: gray;
    font-family: 'Roboto Condensed', sans-serif;
@@ -99,25 +89,19 @@ ul li {
    font-weight: 200;
 }
 
-
-
-  span.Collapsible__trigger.is-open {
+.careersCollapsible span.Collapsible__trigger.is-open {
     color: black;
 }
 
 
- 
-.expertlist {
+.careersCollapsible .expertlist {
    display: flex;
 }
 
-ul.exp {
+.careersCollapsible ul.exp {
    width: 50%;
 }
   
 .buttons--careerpath{
-   
    margin-top: -120px;
-
 }
-

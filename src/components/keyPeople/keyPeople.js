@@ -1,79 +1,81 @@
+
 import React, { Component, useEffect, useState } from 'react';
 import './keyPeople.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-
 function keyPeople() {
-
     const people =
         [
             {
                 "id": 1,
                 "image": "http://drive.google.com/uc?export=view&id=1u1beNHaroWZoiCLit3e481bGn2wGbQha",
-
                 "name": "Damian Lazzarano",
-                "email": "damian.lazzarano@globant.com",
-                "studio": "SP & UI STUDIO PARTNER "
+                "email": "@damian.lazzarano",
+                "studio": "SP & UI STUDIO PARTNER",
+                "emailto": "damian.lazzarano@globant.com",
+                "clase": "damian"
             },
             {
                 "id": 2,
                 "image": "http://drive.google.com/uc?export=view&id=1G766UEVzO6UPr7K9QItnx5nNXZChpXH8",
                 "name": "David Correa",
-                "email": "david.correa@globant.com",
-                "studio": "SP & UI STUDIO PARTNER "
-
+                "email": "@david.correa",
+                "studio": "SP & UI STUDIO PARTNER ",
+                "emailto": "david.correa@globant.com",
+                "clase": "david"
             },
             {
                 "id": 3,
                 "image": "http://drive.google.com/uc?export=view&id=1C4f1RkbI5GhbqoI__DfQo8STVvdr_OF8",
                 "name": "Luciana Zavaleta",
-                "email": "luciana.zavaleta@globant.com",
-                "studio": "UI ENGINEERING PARTNER "
+                "email": "@luciana.zavaleta",
+                "studio": "UI ENGINEERING PARTNER ",
+                "emailto": "luciana.zavaleta@globant.com",
+                "clase": "luciana"
             },
             {
                 "id": 4,
                 "image": "http://drive.google.com/uc?export=view&id=1QlQZ4EiNk6lDSpADmVMjDuDfWrhN_IXu",
                 "name": "Gabriel Martinez",
-                "email": "gabriel.martinez@globant.com",
-                "studio": "UI TDC FOCAL TECH. DIRECTOR "
+                "email": "@gabriel.martinez",
+                "studio": "UI TDC FOCAL TECH. DIRECTOR ",
+                "emailto": "gabriel.martinez@globant.com",
+                "clase": "gabriel"
             },
             {
                 "id": 5,
                 "image": "http://drive.google.com/uc?export=view&id=1mKfjMbPS9Nsig1RKIQ6NJ0sQy_5jL_88",
                 "name": "Sebastian Gomez",
-                "email": "sebastian.gomez@globant.com",
-                "studio": "UI ENGINEERING TECH.MANAGER"
+                "email": "@sebastian.gomez",
+                "studio": "UI ENGINEERING TECH.MANAGER",
+                "emailto": "sebastian.gomez@globant.com",
+                "clase": "sebastian"
             }
 
         ]
 
-    console.log(people);
-
-
     return (
 
-        <>
+        < div className="peopleInfo">
             <p className="titleKeyPeople">UI Studio COPE</p>
             <p className="sub-title">key people</p>
-            <div className="key-people">
+            <div className="key-people"  >
                 {people.map((people, index) => {
-                    return <div key={index} className="people">
+                    return <div key={index} className="people" id={index}>
                         <img src={people.image} />
                         <p>{people.name} </p>
-                        <a href="mailto:{people.email}" >{people.email}</a>
-                        <h4>{people.studio}</h4>
+                        <a href={`mailto: ${people.emailto}`} className="mail">{people.email}</a>
+                        <h5 className={people.clase}>{people.studio}</h5>
                     </div>
                 })}
             </div>
-            <div className="buttons buttons--careerpath">
-                <Link to={{ pathname: '/fci' }} className="button_previous button_previous--careerpath" >Previous</Link>
-                <Link to={{ pathname: '#' }} className="button_next button_next--careerpath" >Next</Link>
+            <div className="buttons buttons--keypeople">
+                <Link to={{ pathname: '/fci' }} className="button_previous " >Previous</Link>
+                <Link to={{ pathname: '#' }} className="button_next" >Next</Link>
             </div>
-        </>
+        </div>
 
     )
-
-
 }
 
 export default keyPeople;

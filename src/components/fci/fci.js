@@ -43,7 +43,7 @@ const fci = () => {
 
             <div className="buttons buttons--careerpath">
                 <Link to={{ pathname: '/triForce' }} className="button_previous button_previous--careerpath" >Previous</Link>
-                <Link to={{ pathname: '/triForce' }} className="button_next button_next--careerpath" >Next</Link>
+                <Link to={{ pathname: '/keyPeople' }} className="button_next button_next--careerpath" >Next</Link>
             </div>
         </div>
     )

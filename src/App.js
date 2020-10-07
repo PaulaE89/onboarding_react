@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import CareerPath from './components/careerPath/CareerPath';
 import triForce from './components/triForce/triForce';
 import fci from './components/fci/fci';
+import keyPeople from './components/keyPeople/keyPeople'
 
 
 export class App extends Component {
@@ -20,6 +21,7 @@ export class App extends Component {
             <Route path='/careerPath' component={CareerPath}/>
             <Route path='/triForce' component={triForce}/>
             <Route path='/fci' component={fci}/>
+            <Route path='/keyPeople' component={keyPeople}/>
           </Switch>
         </Router>
    

@@ -7,12 +7,14 @@ const ready = () => {
 
     return (
         <>
-            <div className="image-ready">
-            </div>
-            <div className="buttons buttons--ready">
-                <Link to={{ pathname: '/keyPeople' }} className="button_previous " >Previous</Link>
-                <Link to={{ pathname: '/ready' }} className="button_next" >Next</Link>
-            </div>
+            <a href="https://www.globant.com" target="_blank">
+                <div className="image-ready">
+                </div>
+                <div className="buttons buttons--ready">
+                    <Link to={{ pathname: '/keyPeople' }} className="button_previous " >Previous</Link>
+                    <Link to={{ pathname: '/ready' }} className="button_next" >Next</Link>
+                </div>
+            </a>
         </>
     )
 }

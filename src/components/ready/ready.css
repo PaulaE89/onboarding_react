@@ -10,7 +10,11 @@
 
 }
 
-.buttons--ready{
+ 
 
-    position: absolute;
-}
+
+@media only screen and (min-width: 1024px) {
+    .buttons--ready {
+        margin-top: -170px;
+    }
+  }

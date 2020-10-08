@@ -1,5 +1,5 @@
 
-import React, { Component, useEffect, useState } from 'react';
+import React, { Component} from 'react';
 import './keyPeople.css';
 import {  Link } from 'react-router-dom';
 

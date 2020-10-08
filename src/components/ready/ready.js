@@ -12,7 +12,7 @@ const ready = () => {
                 </div>
                 <div className="buttons buttons--ready">
                     <Link to={{ pathname: '/keyPeople' }} className="button_previous " >Previous</Link>
-                    <Link to={{ pathname: '/ready' }} className="button_next" >Next</Link>
+                    <Link to={{ pathname: '/studios' }} className="button_next" >Next</Link>
                 </div>
             </a>
         </>

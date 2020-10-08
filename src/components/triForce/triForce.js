@@ -4,7 +4,7 @@ import ui_studio from '../../assets/ui_studio.png';
 import account from '../../assets/account.png'
 import './triForce.css';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const triForce = (userName) => {

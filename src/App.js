@@ -8,6 +8,7 @@ import CareerPath from './components/careerPath/CareerPath';
 import triForce from './components/triForce/triForce';
 import fci from './components/fci/fci';
 import keyPeople from './components/keyPeople/keyPeople'
+import ready from './components/ready/ready'
 
 
 export class App extends Component {
@@ -22,6 +23,7 @@ export class App extends Component {
             <Route path='/triForce' component={triForce}/>
             <Route path='/fci' component={fci}/>
             <Route path='/keyPeople' component={keyPeople}/>
+            <Route path='/ready' component={ready}/>
           </Switch>
         </Router>
    

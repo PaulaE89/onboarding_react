@@ -1,7 +1,7 @@
 
 import React, { Component, useEffect, useState } from 'react';
 import './keyPeople.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 function keyPeople() {
     const people =
@@ -71,7 +71,7 @@ function keyPeople() {
             </div>
             <div className="buttons buttons--keypeople">
                 <Link to={{ pathname: '/fci' }} className="button_previous " >Previous</Link>
-                <Link to={{ pathname: '#' }} className="button_next" >Next</Link>
+                <Link to={{ pathname: '/ready' }} className="button_next" >Next</Link>
             </div>
         </div>
 

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+
+.main-studio{
+
+    background: black;
+    height: 100vh;
+}
+
+.title-studios{
+    padding:3% 0;
+    font-weight: 800;
+    color:white;
+
+}
+
+.title-studios,h3{
+
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+h3{
+    color:#C1D72F;
+    margin-bottom: 3%;
+    font-weight: 600;
+  
+}
+
+
+.buttons--studios{
+    padding-bottom: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {     
+    width: 19px;
+    background-size: cover;       
+    padding: 15px;         
+    border-radius: 20px;    
+    background-color: none; 
+
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+.carousel-studios{
+    margin-bottom: 10%;
+}
+
+
+.carousel-control-prev-icon {    
+     background-image: url('../../assets/previous.png');
+     height: 40px;
+     width: 40px;
+}
+
+
+.carousel-control-next-icon {    
+       background-image: url('../../assets/next.png');
+       height: 40px;
+       width: 40px;
+ }

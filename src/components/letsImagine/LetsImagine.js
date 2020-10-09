@@ -9,7 +9,7 @@ export default class LetsImagine extends Component {
 
     render() {
         const nameUser = this.props.location.name;
-        console.log(nameUser);
+        
 
 
         return (
